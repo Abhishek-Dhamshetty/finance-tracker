@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Sun, Moon, User, Shield } from 'lucide-react';
+import { Menu, User, Shield } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 import type { UserRole } from '../../types';
 
@@ -71,19 +71,6 @@ export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
               <span className="hidden sm:inline">Viewer</span>
             </button>
           </div>
-
-          {/* Dark Mode Toggle */}
-          {/* <button
-            onClick={toggleDarkMode}
-            className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-            aria-label="Toggle dark mode"
-          >
-            {state.isDarkMode ? (
-              <Sun size={20} className="text-yellow-500" />
-            ) : (
-              <Moon size={20} className="text-gray-600" />
-            )}
-          </button> */}
         </div>
       </div>
     </header>
