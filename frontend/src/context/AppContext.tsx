@@ -78,20 +78,7 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
         ...state,
         userRole: action.payload,
       };
-
-    case 'TOGGLE_DARK_MODE':
-      return {
-        ...state,
-        isDarkMode: !state.isDarkMode,
-      };
-
-    case 'SET_DARK_MODE':
-      return {
-        ...state,
-        isDarkMode: action.payload,
-      };
-
-    default:
+     default:
       return state;
   }
 };

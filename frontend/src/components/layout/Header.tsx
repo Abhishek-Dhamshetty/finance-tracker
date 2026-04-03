@@ -8,7 +8,7 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ onMenuToggle }) => {
-  const { state, setUserRole, toggleDarkMode } = useApp();
+  const { state, setUserRole} = useApp();
 
   const handleRoleChange = (role: UserRole) => {
     setUserRole(role);
